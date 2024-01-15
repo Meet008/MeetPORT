@@ -1,0 +1,23 @@
+<AccordionLayout title={"Projects"} icon={"ion:md-build"}>
+    {
+      CONTENT.projects.map((item) => {
+        return (
+          <Card
+            title={item.title}
+            timeframe=""
+            description={item.description}
+            tags={item.tech}
+            url={item.url}
+            url_name={"Open Project"}
+          />
+        );
+      })
+    }
+    <p class="text-center">
+      See More on <a
+        class="underline"
+        href="https://github.com/utsavgadhiya?tab=repositories"
+        target="_blank">here</a
+      >
+    </p>
+  </AccordionLayout>

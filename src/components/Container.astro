@@ -1,0 +1,59 @@
+---
+import * as CONTENT from "../pages/content";
+import AccordionLayout from "../layouts/AccordionLayout.astro";
+import Card from "./Card.astro";
+import Icon from "astro-icon";
+---
+
+<ul class="shadow-box">
+  <AccordionLayout title={"About"} icon={"mdi:account-badge-outline"}>
+    {CONTENT.about}
+  </AccordionLayout>
+
+  <AccordionLayout title={"Work"} icon={"ic:baseline-work-outline"}>
+    {
+      CONTENT.work.map((item) => {
+        return (
+          <Card
+            title={item.role}
+            timeframe={`${item.from} - ${item.to}`}
+            description={item.location}
+            tags={""}
+            url={item.org_url}
+            url_name={item.org}
+          />
+        );
+      })
+    }
+  </AccordionLayout>
+
+  <AccordionLayout title={"Skills"} icon={"ri:grid-fill"}>
+    <ul class="flex flex-wrap flex-row">
+      {
+        CONTENT.skills.map((item) => (
+          <li class="flex-grow-1 px-4 py-4">
+            <Icon name={item.icon} class="w-8 h-8" />
+            {item.skill}
+          </li>
+        ))
+      }
+    </ul>
+  </AccordionLayout>
+
+  <AccordionLayout title={"Education"} icon={"carbon:education"}>
+    {
+      CONTENT.education.map((item) => {
+        return (
+          <Card
+            title={item.course}
+            timeframe={`${item.from} - ${item.to}`}
+            description={item.location}
+            tags={""}
+            url={item.url}
+            url_name={item.institute}
+          />
+        );
+      })
+    }
+  </AccordionLayout>
+</ul>
