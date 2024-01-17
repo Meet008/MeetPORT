@@ -74,21 +74,39 @@ export const skills = [
 ];
 
 // Projects --> #project section
-// export const projects = [
-//   {
-//     title: "BookHub",
-//     description: "An online books webapp created with React, Node, MongoDB.",
-//     url: "https://github.com/utsavgadhiya/BookHub",
-//     tech: "JavaScript(Node.js), React, MongoDB",
-//   },
-//   {
-//     title: "ToDoNow",
-//     description:
-//       "Easy-to-use to-do app for effective task management and organization.",
-//     url: "https://github.com/utsavgadhiya/ToDoNow",
-//     tech: "React, Tailwind CSS",
-//   },
-// ];
+export const projects = [
+  {
+    title: "Amazon UI Clone",
+    description:
+      "A e-commerce project built with ReactJS and deployed with Firebase hosting platform",
+    url: "https://clone-31f90.firebaseapp.com/",
+    tech: "JavaScript, ReactJS, Firebase,HTML, CSS",
+    partner: "Platform - Firebase",
+  },
+  {
+    title: "Logistic Mobile Application",
+    description: "A Logistic Management Mobile app built on React native",
+    url: "https://bit.ly/2G6fvFp",
+    tech: "React native, NodeJS, REST API, SQLite, Firebase, CSS",
+    partner: "Platform - Google Play store",
+  },
+  {
+    title: "Face Detection App",
+    description:
+      "A Full-stack live Face Recognition Web application buit with ReactJs, NodeJs and Machine Learning APIs to Locate face on Uploaded Images",
+    url: "https://smartbrain-front-vx8f.onrender.com",
+    tech: "ReactJS, NodeJS, ExpressJS, PostgreSQL, ContextAPI, CSS3, Render(Deployment Platform)",
+    partner: "Platform - Render",
+  },
+  {
+    title: "Robo Finder",
+    description:
+      "A Web application built with ReactJs and Redux to search details with Live API tracking",
+    url: "https://bit.ly/32uVcsR",
+    tech: "ReactJS,Redux,CSS3,HTML5",
+    partner: "Platform - Github Pages",
+  },
+];
 
 // Education --> #education section
 export const education = [
