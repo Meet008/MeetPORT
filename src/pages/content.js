@@ -1,17 +1,17 @@
 // Personal Information --> #hero section
 export const name = "Meet Chothani";
-export const designation = "Frontend Developer";
+export const designation = "Software Developer";
 export const location = "Toronto, Canada";
 
 // About
 export const about =
-  "I am a Front-end developer who turns your ideas into reality. I have experience developing a variety of web applications that are fast, efficient, and reliable with beautiful Interfaces.";
+  "I am a results-driven Software Developer with a strong track record of delivering high-quality, scalable web and mobile applications. Specializing in the MERN stack and React Native, I excel in designing and implementing solutions that enhance user engagement and satisfaction. With a keen focus on creating efficient, reliable, and visually appealing applications, I am adept at translating complex requirements into impactful software. My experience in collaborating with cross-functional teams and adapting to evolving project needs positions me as a valuable asset in driving innovation and success in dynamic development environments.";
 // Work Experience --> #work section
 export const work = [
   {
     from: "Sept 2020",
     to: "Oct 2021",
-    role: "React Developer",
+    role: "Software Developer",
     org: "IIH Global",
     org_url: "https://www.iihglobal.com/",
     location: "Gujarat, India",
@@ -73,8 +73,36 @@ export const skills = [
   },
 ];
 
+// Education --> #education section
+export const education = [
+  {
+    from: "2023",
+    to: "2024",
+    institute: "Loyalist College",
+    course: "Post Graduation in Full-stack Development",
+    url: "https://loyalistcollege.com/",
+    location: "Toronto, Canada",
+  },
+  {
+    from: "2016",
+    to: "2020",
+    institute: "Ganpat University",
+    course: "Bachelor of Technology in Computer Science",
+    url: "https://www.ganpatuniversity.ac.in/",
+    location: "Mehsana, India",
+  },
+];
+
 // Projects --> #project section
 export const projects = [
+  {
+    title: "CityDwellings",
+    description:
+      "A comprehensive real estate management platform where users can easily buy, sell, and rent properties.",
+    url: "https://city-dwellings-app.vercel.app/",
+    tech: "JavaScript, ReactJS, NodeJS, MongoDB, AWS",
+    partner: "Platform - Vercel",
+  },
   {
     title: "Amazon UI Clone",
     description:
@@ -86,7 +114,7 @@ export const projects = [
   {
     title: "Logistic Mobile Application",
     description: "A Logistic Management Mobile app built on React native",
-    url: "https://bit.ly/2G6fvFp",
+    url: "",
     tech: "React native, NodeJS, REST API, SQLite, Firebase, CSS",
     partner: "Platform - Google Play store",
   },
@@ -105,25 +133,5 @@ export const projects = [
     url: "https://bit.ly/32uVcsR",
     tech: "ReactJS,Redux,CSS3,HTML5",
     partner: "Platform - Github Pages",
-  },
-];
-
-// Education --> #education section
-export const education = [
-  {
-    from: "2023",
-    to: "2024",
-    institute: "Loyalist College",
-    course: "Post Graduation in Computer Software and Database Development",
-    url: "https://loyalistcollege.com/",
-    location: "Toronto, Canada",
-  },
-  {
-    from: "2016",
-    to: "2020",
-    institute: "Ganpat University",
-    course: "Bachelor of Technology in Computer Science",
-    url: "https://www.ganpatuniversity.ac.in/",
-    location: "Mehsana, India",
   },
 ];

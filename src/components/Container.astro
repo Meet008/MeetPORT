@@ -40,30 +40,6 @@ import Icon from "astro-icon";
     </ul>
   </AccordionLayout>
 
-  <AccordionLayout title={"Projects"} icon={"ion:md-build"}>
-    {
-      CONTENT.projects.map((item) => {
-        return (
-          <Card
-            title={item.title}
-            timeframe={item.partner}
-            description={item.description}
-            tags={item.tech}
-            url={item.url}
-            url_name={"Open Project"}
-          />
-        );
-      })
-    }
-    <p class="text-center">
-      See More on <a
-        class="underline"
-        href="https://github.com/Meet008?tab=repositories"
-        target="_blank">here</a
-      >
-    </p>
-  </AccordionLayout>
-
   <AccordionLayout title={"Education"} icon={"carbon:education"}>
     {
       CONTENT.education.map((item) => {
@@ -79,5 +55,31 @@ import Icon from "astro-icon";
         );
       })
     }
+  </AccordionLayout>
+
+  <AccordionLayout title={"Projects"} icon={"ion:md-build"}>
+    {
+      CONTENT.projects.map((item) => {
+        return (
+          <Card
+            title={item.title}
+            timeframe={item.partner}
+            description={item.description}
+            tags={item.tech}
+            url={item.url}
+            url_name={
+              item.title !== "Logistic Mobile Application" && "Open Project"
+            }
+          />
+        );
+      })
+    }
+    <p class="text-center">
+      See More on <a
+        class="underline"
+        href="https://github.com/Meet008?tab=repositories"
+        target="_blank">here</a
+      >
+    </p>
   </AccordionLayout>
 </ul>
