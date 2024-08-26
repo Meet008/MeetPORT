@@ -19,7 +19,7 @@ export const work = [
   {
     from: "Jan 2020",
     to: "June 2020",
-    role: "Trainee Software Engineer",
+    role: "Jr. Software Engineer",
     org: "Pyther Innovations",
     org_url: "https://www.pyther.com/",
     location: "Gujarat, India",
