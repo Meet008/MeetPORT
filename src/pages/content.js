@@ -10,7 +10,7 @@ export const about =
 export const work = [
   {
     from: "Sept 2020",
-    to: "Oct 2021",
+    to: "Dec 2022",
     role: "Software Developer",
     org: "IIH Global",
     org_url: "https://www.iihglobal.com/",
